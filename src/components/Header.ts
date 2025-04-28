@@ -4,7 +4,7 @@ export const Header = (): string => {
   const navLinks = ["posts", "comments", "albums", "photos", "todos", "users"];
 
   return /*html*/ `
-    <header class="w-full fixed bg-white shadow-md">
+    <header class="w-full fixed bg-[#ffffff80] shadow-md z-10 backdrop-blur-xl">
         ${Container(/*html*/ `
             <nav class="flex items-center justify-between py-6">
                 <a href="/" onclick="location.pathname = '/'">
