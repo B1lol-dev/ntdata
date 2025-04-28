@@ -38,7 +38,7 @@ export const Home = (): string => {
 
   return /*html*/ `
     ${Header()}
-    <main class="pt-30">
+    <main class="py-30">
         <section>
             ${Container(/*html*/ `
                 <div class="grid grid-cols-4 justify-items-center gap-6" id="home_posts_wrapper">
