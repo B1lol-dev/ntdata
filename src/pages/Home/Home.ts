@@ -17,9 +17,8 @@ export const Home = (): string => {
       .then((res) => {
         const { data: posts } = res;
 
-        posts.map((post: any) => {
-          home_posts_wrapper.innerHTML += PostCard(post);
-        });
+        const postsHTML = posts.map((post: any) => PostCard(post)).join("");
+        home_posts_wrapper.innerHTML = postsHTML;
 
         const userIds = document.querySelectorAll("[data-user-id]");
         userIds.forEach((userId) => {
