@@ -1,7 +1,5 @@
 import "./style.css";
 
-const root = document.getElementById("app")! as HTMLDivElement;
+import { Router } from "./Router";
 
-root.innerHTML = /*html*/ `
-  <h1 class="text-center">Nt Data</h1>
-`;
+Router(document.getElementById("app")! as HTMLDivElement);
