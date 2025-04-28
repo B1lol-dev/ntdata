@@ -6,7 +6,7 @@ export const CommentCard = (data: any): string => {
       <div class="flex items-center justify-between mb-2">
         <div class="flex items-center space-x-3">
           <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-medium text-sm">
-            <span>JD</span>
+            <span>${data.email.substring(0, 1).toUpperCase()}</span>
           </div>
           <div>
             <p class="font-medium text-gray-800">Username: <span class="text-blue-600">${
