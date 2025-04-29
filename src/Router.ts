@@ -6,6 +6,7 @@ import { NotFound } from "./pages/404/NotFound";
 import { Comments } from "./pages/Comments/Comments";
 import { Posts } from "./pages/Posts/Posts";
 import { Albums } from "./pages/Albums/Albums";
+import { Todos } from "./pages/Todos/Todos";
 
 export const Router = (root: HTMLDivElement) => {
   createRouter()
@@ -20,6 +21,9 @@ export const Router = (root: HTMLDivElement) => {
     })
     .get("/albums", () => {
       root.innerHTML = Albums();
+    })
+    .get("/todos", () => {
+      root.innerHTML = Todos();
     })
     .error(404, () => {
       root.innerHTML = NotFound();
