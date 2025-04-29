@@ -64,8 +64,8 @@ export const TodoCard = (data: any): string => {
         </button>
         </div>
         <div>
-        <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-700 transition-colors">
-            Mark Incomplete
+        <button class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-700 transition-colors" onclick="navigator.clipboard.writeText(this.parentElement.parentElement.previousElementSibling.querySelector('label').innerText)">
+            Copy
         </button>
         </div>
     </div>
